@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Pages\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Index.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\Index %28copy%29.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Index.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Shared.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Shared.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Shared.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Shared.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\Pages\Index.en-GB.Designer.cs">
+      <DependentUpon>Index.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\Index.en-US.Designer.cs">
+      <DependentUpon>Index.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Shared.en-GB.Designer.cs">
+      <DependentUpon>Shared.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Shared.en-US.Designer.cs">
+      <DependentUpon>Shared.en-US.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
