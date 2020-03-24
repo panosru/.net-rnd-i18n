@@ -11,11 +11,11 @@
     <Folder Include="Resources\Pages\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Pages\Resources.resx">
+    <EmbeddedResource Update="Resources\Pages\Index.en-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.en-GB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Pages\Index %28copy%29.en-GB.resx">
+    <EmbeddedResource Update="Resources\Pages\Index.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
