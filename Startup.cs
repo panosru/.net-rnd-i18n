@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Localization.Routing;
 
 namespace i18n
 {
@@ -31,6 +32,10 @@ namespace i18n
 
             services
                 .AddRazorPages()
+                .AddRazorPagesOptions(options =>
+                {
+                    options.Conventions.Add(new CustomCultureRouteRouteModelConvention());
+                })
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
 
             services.Configure<RequestLocalizationOptions>(options =>
@@ -41,9 +46,10 @@ namespace i18n
                     new CultureInfo("en-US")
                 };
 
-                options.DefaultRequestCulture = new RequestCulture(supportedCultures[0].Name);
+                //options.DefaultRequestCulture = new RequestCulture(supportedCultures[0].Name);
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
+                options.RequestCultureProviders.Insert(0, new RouteDataRequestCultureProvider());
             });
         }
 

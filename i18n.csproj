@@ -4,11 +4,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-
-
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Resources\Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Resources\Shared.en-GB.resx" />
+    <EmbeddedResource Remove="Resources\Shared.en-US.resx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\Pages\Index.en-GB.resx">
@@ -19,14 +21,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Shared.en-GB.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Shared.en-GB.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Shared.en-US.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Shared.en-US.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Resources\Shared.en-US.Designer.cs" />
+    <Compile Remove="Resources\Shared.en-GB.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Pages\Index.en-GB.Designer.cs">
@@ -35,11 +33,9 @@
     <Compile Update="Resources\Pages\Index.en-US.Designer.cs">
       <DependentUpon>Index.en-US.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Shared.en-GB.Designer.cs">
-      <DependentUpon>Shared.en-GB.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\Shared.en-US.Designer.cs">
-      <DependentUpon>Shared.en-US.resx</DependentUpon>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shared.en-GB.resx" />
+    <None Include="Resources\Shared.en-US.resx" />
   </ItemGroup>
 </Project>

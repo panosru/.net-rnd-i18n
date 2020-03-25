@@ -1,9 +1,9 @@
 ﻿@page
 @model IndexModel
-@using i18n.Resources
 @using Microsoft.AspNetCore.Mvc.Localization
+@using i18n.Resources
 @inject IViewLocalizer Localizer
-@inject IHtmlLocalizer<Resources.Shared> SharedLocalizer
+@inject IHtmlLocalizer<SharedRes> SharedLocalizer
 
 @{
     ViewData["Title"] = "Home page";
