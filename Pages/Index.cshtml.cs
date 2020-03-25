@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Localization;
-using i18n.Resources;
 
 namespace i18n.Pages
 {
@@ -14,12 +13,12 @@ namespace i18n.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly IStringLocalizer<IndexModel> _localizer;
-        private readonly IStringLocalizer<SharedRes> _sharedLocalizer;
+        private readonly IStringLocalizer<Resources.Shared> _sharedLocalizer;
 
         public IndexModel(
             ILogger<IndexModel> logger,
             IStringLocalizer<IndexModel> localizer,
-            IStringLocalizer<SharedRes> sharedLocalizer)
+            IStringLocalizer<Resources.Shared> sharedLocalizer)
         {
             _logger = logger;
             _localizer = localizer;

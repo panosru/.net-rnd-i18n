@@ -1,9 +1,9 @@
 ﻿using System;
 namespace i18n.Resources
 {
-    public class SharedRes
+    public class Shared
     {
-        public SharedRes()
+        public Shared()
         {
         }
     }
