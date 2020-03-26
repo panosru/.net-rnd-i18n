@@ -9,6 +9,9 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Resources\Pages\" />
+    <Folder Include="Localization\" />
+    <Folder Include="TagHelpers\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\Pages\Index.en-GB.resx">
@@ -27,6 +30,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Shared.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\Privacy.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Privacy.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\Privacy.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Privacy.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Pages\Index.en-GB.Designer.cs">
@@ -41,5 +52,18 @@
     <Compile Update="Resources\Shared.en-US.Designer.cs">
       <DependentUpon>Shared.en-US.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Pages\Privacy.en-US.Designer.cs">
+      <DependentUpon>Privacy.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\Privacy.en-GB.Designer.cs">
+      <DependentUpon>Privacy.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\Privacy.en-US.Designer.cs">
+      <DependentUpon>Privacy.en-US.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\Pages\Privacy.en-GB" />
+    <None Remove="Resources\Pages\Privacy.en-US" />
   </ItemGroup>
 </Project>

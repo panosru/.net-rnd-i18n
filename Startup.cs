@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Localization.Routing;
+using i18n.Localization;
+using i18n.Middlewares;
 
 namespace i18n
 {
@@ -46,10 +48,10 @@ namespace i18n
                     new CultureInfo("en-US")
                 };
 
-                //options.DefaultRequestCulture = new RequestCulture(supportedCultures[0].Name);
+                options.DefaultRequestCulture = new RequestCulture(supportedCultures[0].Name);
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
-                options.RequestCultureProviders.Insert(0, new RouteDataRequestCultureProvider());
+                options.RequestCultureProviders.Insert(0, new RouteDataRequestCultureProvider { Options = options });
             });
         }
 
@@ -67,14 +69,16 @@ namespace i18n
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
             app.UseRouting();
 
             app.UseRequestLocalization(app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
             app.UseAuthorization();
+
+            //app.UseMiddleware<RedirectUnsupportedCultures>();
 
             app.UseEndpoints(endpoints =>
             {
