@@ -13,12 +13,12 @@ namespace i18n.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly IStringLocalizer<IndexModel> _localizer;
-        private readonly IStringLocalizer<Resources.Shared> _sharedLocalizer;
+        private readonly IStringLocalizer<SharedResource> _sharedLocalizer;
 
         public IndexModel(
             ILogger<IndexModel> logger,
             IStringLocalizer<IndexModel> localizer,
-            IStringLocalizer<Resources.Shared> sharedLocalizer)
+            IStringLocalizer<SharedResource> sharedLocalizer)
         {
             _logger = logger;
             _localizer = localizer;
@@ -27,9 +27,9 @@ namespace i18n.Pages
 
         public void OnGet()
         {
-            _logger.LogInformation(_localizer["_WELCOME_"]);
-            _logger.LogInformation(_sharedLocalizer["_COLOR_"]);
-            _logger.LogDebug("test");
+            _logger.LogDebug(_localizer["_WELCOME_"]);
+            _logger.LogDebug(_sharedLocalizer["_COLOR_"]);
+            _logger.LogDebug("----");
         }
     }
 }

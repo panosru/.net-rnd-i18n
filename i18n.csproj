@@ -22,13 +22,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Shared.en-GB.resx">
+    <EmbeddedResource Update="Resources\SharedResource.en-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Shared.en-GB.Designer.cs</LastGenOutput>
+      <LastGenOutput>SharedResource.en-GB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Shared.en-US.resx">
+    <EmbeddedResource Update="Resources\SharedResource.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Shared.en-US.Designer.cs</LastGenOutput>
+      <LastGenOutput>SharedResource.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Pages\Privacy.en-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -46,11 +46,11 @@
     <Compile Update="Resources\Pages\Index.en-US.Designer.cs">
       <DependentUpon>Index.en-US.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Shared.en-GB.Designer.cs">
-      <DependentUpon>Shared.en-GB.resx</DependentUpon>
+    <Compile Update="Resources\SharedResource.en-GB.Designer.cs">
+      <DependentUpon>SharedResource.en-GB.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Shared.en-US.Designer.cs">
-      <DependentUpon>Shared.en-US.resx</DependentUpon>
+    <Compile Update="Resources\SharedResource.en-US.Designer.cs">
+      <DependentUpon>SharedResource.en-US.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\Pages\Privacy.en-US.Designer.cs">
       <DependentUpon>Privacy.en-US.resx</DependentUpon>

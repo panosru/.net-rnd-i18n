@@ -1,11 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -78,6 +74,7 @@ namespace i18n
 
             app.UseAuthorization();
 
+            // Attempt to make auto-redirect to culture if it is not exist in the url
             //app.UseMiddleware<RedirectUnsupportedCultures>();
 
             app.UseEndpoints(endpoints =>
