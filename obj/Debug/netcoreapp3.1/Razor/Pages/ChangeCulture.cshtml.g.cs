@@ -21,7 +21,7 @@ using i18n;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute("RouteTemplate", "/change-culture/{NewCulture}/{ReturnUrl}")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"32e7fbf70563343e705579e489de6b48862a36e2", @"/Pages/ChangeCulture.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cf2e30528a688ef468a50278ded044f7f33f0ac5", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7025fa36ff973e7d14015f429263b949bbd8b00b", @"/Pages/_ViewImports.cshtml")]
     public class Pages_ChangeCulture : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998

@@ -39,7 +39,7 @@ namespace i18n.TagHelpers
         private const string Href = "href";
 
         private readonly IHttpContextAccessor contextAccessor;
-        private readonly string defaultRequestCulture = "en";
+        private readonly string defaultRequestCulture = "en-GB";
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {

@@ -28,6 +28,8 @@ namespace i18n
         {
             services.AddLocalization(options => options.ResourcesPath = "Resources");
 
+            services.AddHttpContextAccessor();
+
             services
                 .AddRazorPages()
                 .AddRazorPagesOptions(options =>
