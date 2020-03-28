@@ -1,6 +1,5 @@
 ﻿@using System.Globalization
 
-
 @{
     var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
 }
@@ -13,6 +12,10 @@
     <title>@ViewData["Title"] - i18n</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <script src"~/js/site.js"></script>
 </head>
 <body>
     <header>
@@ -34,19 +37,24 @@
                     </ul>
                 </div>
                 <nav class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    @if (!("en-GB" == CultureInfo.CurrentCulture.Name))
-                    {
-                        <a class="nav-link" asp-page="/ChangeCulture"
-                           asp-route-NewCulture="en-gb"
-                           asp-route-ReturnUrl="@returnUrl">en-GB</a>
-                    }
+                    <form id="changeCulture"
+                          asp-page="ChangeCulture"
+                          method="post"
+                          role="form">
 
-                    @if (!("en-US" == CultureInfo.CurrentCulture.Name))
-                    {
-                        <a class="nav-link" asp-page="/ChangeCulture"
-                           asp-route-NewCulture="en-us"
-                           asp-route-ReturnUrl="@returnUrl">en-US</a>
-                    }
+                        @if (!("en-GB" == CultureInfo.CurrentCulture.Name))
+                        {
+                            <a class="nav-link submit">en-GB</a>
+                            <input type="hidden" name="NewCulture" value="en-gb" />
+                        }
+
+                        @if (!("en-US" == CultureInfo.CurrentCulture.Name))
+                        {
+                            <a class="nav-link submit">en-US</a>
+                            <input type="hidden" name="NewCulture" value="en-us" />
+                        }
+                        <input type="hidden" name="ReturnUrl" value="@returnUrl" />
+                    </form>
                 </nav>
             </div>
         </nav>
