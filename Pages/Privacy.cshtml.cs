@@ -14,6 +14,7 @@ namespace i18n.Pages
 
         public void OnGet()
         {
+            _logger.LogDebug(Request.Cookies[".AspNetCore.Culture"]);
         }
     }
 }

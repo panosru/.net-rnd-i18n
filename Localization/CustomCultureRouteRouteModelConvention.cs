@@ -14,7 +14,7 @@ namespace i18n.Localization
              {
                  AttributeRouteModel = new AttributeRouteModel
                  {
-                     Template = AttributeRouteModel.CombineTemplates("/{culture?}", SelectorModel.AttributeRouteModel.Template)
+                     Template = AttributeRouteModel.CombineTemplates("/{culture:required}", SelectorModel.AttributeRouteModel.Template)
                  }
              })
              .ToList()

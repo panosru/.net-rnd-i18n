@@ -1,5 +1,6 @@
 ﻿using System;
-namespace i18n
+
+namespace i18n.Localization
 {
     public class SharedResource
     {
