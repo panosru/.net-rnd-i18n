@@ -10,8 +10,6 @@
 /Volumes/Projects/RND/VisualStudio/RND/i18n/bin/Debug/netcoreapp3.1/en-US/i18n.resources.dll
 /Volumes/Projects/RND/VisualStudio/RND/i18n/bin/Debug/netcoreapp3.1/i18n.Views.dll
 /Volumes/Projects/RND/VisualStudio/RND/i18n/bin/Debug/netcoreapp3.1/i18n.Views.pdb
-/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Index.en-GB.resources
-/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Index.en-US.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Privacy.en-GB.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Privacy.en-US.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.csproj.GenerateResource.cache
@@ -48,3 +46,7 @@
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Localization.SharedResource.en-US.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/en-GB/i18n.resources.cs
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/en-US/i18n.resources.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.IndexModel.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.IndexModel.en-US.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Index.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Index.en-US.resources
