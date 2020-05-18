@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace i18n.Resources {
+namespace i18n.Resources.Localization {
     using System;
     using System.Reflection;
     
@@ -30,7 +30,7 @@ namespace i18n.Resources {
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.SharedResource.en-GB", typeof(SharedResource_en_GB).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Localization.SharedResource.en-GB", typeof(SharedResource_en_GB).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

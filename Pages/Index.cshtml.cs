@@ -27,7 +27,7 @@ namespace i18n.Pages
 
         public void OnGet()
         {
-            _logger.LogDebug(_localizer["_WELCOME_"]);
+            _logger.LogDebug(_sharedLocalizer["_WELCOME_"]);
             _logger.LogDebug(_sharedLocalizer["_COLOR_"]);
             _logger.LogDebug("----");
         }

@@ -12,6 +12,7 @@
     <Folder Include="Localization\" />
     <Folder Include="TagHelpers\" />
     <Folder Include="Middlewares\" />
+    <Folder Include="Resources\Localization\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\Pages\Index.en-GB.resx">
@@ -22,14 +23,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\SharedResource.en-GB.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SharedResource.en-GB.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\SharedResource.en-US.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SharedResource.en-US.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Pages\Privacy.en-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Privacy.en-GB.Designer.cs</LastGenOutput>
@@ -38,6 +31,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Privacy.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resources\Localization\SharedResource.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResource.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resources\Localization\SharedResource.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResource.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Resources\Localization\SharedResource.en-US.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Pages\Index.en-GB.Designer.cs">
@@ -45,12 +49,6 @@
     </Compile>
     <Compile Update="Resources\Pages\Index.en-US.Designer.cs">
       <DependentUpon>Index.en-US.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\SharedResource.en-GB.Designer.cs">
-      <DependentUpon>SharedResource.en-GB.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\SharedResource.en-US.Designer.cs">
-      <DependentUpon>SharedResource.en-US.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\Pages\Privacy.en-US.Designer.cs">
       <DependentUpon>Privacy.en-US.resx</DependentUpon>
@@ -60,6 +58,9 @@
     </Compile>
     <Compile Update="Resources\Pages\Privacy.en-US.Designer.cs">
       <DependentUpon>Privacy.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Resources\Localization\SharedResource.en-GB.Designer.cs">
+      <DependentUpon>SharedResource.en-GB.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
