@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Projects/RND/VisualStudio/RND/i18n/i18n.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Projects/RND/VisualStudio/RND/i18n/i18n.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Projects/RND/VisualStudio/RND/i18n/i18n.csproj",
+        "projectName": "i18n",
+        "projectPath": "/Volumes/Projects/RND/VisualStudio/RND/i18n/i18n.csproj",
+        "packagesPath": "/Users/panosru/.nuget/packages/",
+        "outputPath": "/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/panosru/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
