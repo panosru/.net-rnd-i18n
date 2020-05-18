@@ -13,6 +13,7 @@
     <Folder Include="TagHelpers\" />
     <Folder Include="Middlewares\" />
     <Folder Include="Resources\Localization\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\Pages\Privacy.en-GB.resx">
@@ -33,14 +34,6 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Pages\IndexModel.en-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Index.en-GB.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Pages\IndexModel.en-US.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Index.en-US.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Pages\IndexModel.en-GB.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>IndexModel.en-GB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Pages\IndexModel.en-US.resx">
@@ -52,29 +45,17 @@
     <Compile Remove="Resources\Localization\SharedResource.en-US.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Resources\Pages\Privacy.en-US.Designer.cs">
-      <DependentUpon>Privacy.en-US.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\Pages\Privacy.en-GB.Designer.cs">
-      <DependentUpon>Privacy.en-GB.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\Pages\Privacy.en-US.Designer.cs">
-      <DependentUpon>Privacy.en-US.resx</DependentUpon>
-    </Compile>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Resources\Localization\SharedResource.en-GB.Designer.cs">
-      <DependentUpon>SharedResource.en-GB.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\Pages\Index.en-US.Designer.cs">
-      <DependentUpon>Index.en-US.resx</DependentUpon>
-    </Compile>
     <Compile Update="Resources\Pages\IndexModel.en-GB.Designer.cs">
       <DependentUpon>IndexModel.en-GB.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\Pages\IndexModel.en-US.Designer.cs">
       <DependentUpon>IndexModel.en-US.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Pages\Index.en-GB.Designer.cs">
-      <DependentUpon>Index.en-GB.resx</DependentUpon>
+    <Compile Update="Resources\Pages\PrivacyModel.en-GB.Designer.cs">
+      <DependentUpon>PrivacyModel.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\PrivacyModel.en-US.Designer.cs">
+      <DependentUpon>PrivacyModel.en-US.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

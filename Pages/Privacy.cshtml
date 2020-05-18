@@ -1,7 +1,7 @@
 ﻿@page
 @model PrivacyModel
-@using Microsoft.AspNetCore.Mvc.Localization
-@inject IViewLocalizer Localizer
+@inject IStringLocalizer<PrivacyModel> Localizer
+@inject IHtmlLocalizer<PrivacyModel> HtmlLocalizer
 
 @{
     ViewData["Title"] = "Privacy Policy";

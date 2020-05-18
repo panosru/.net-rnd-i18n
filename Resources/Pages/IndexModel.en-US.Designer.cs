@@ -47,6 +47,12 @@ namespace i18n.Resources.Pages {
             }
         }
         
+        internal static string _WELCOME_ {
+            get {
+                return ResourceManager.GetString("_WELCOME_", resourceCulture);
+            }
+        }
+        
         internal static string _FOOBAR_ {
             get {
                 return ResourceManager.GetString("_FOOBAR_", resourceCulture);

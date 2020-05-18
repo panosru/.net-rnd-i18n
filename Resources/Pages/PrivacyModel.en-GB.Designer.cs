@@ -16,21 +16,21 @@ namespace i18n.Resources.Pages {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Index_en_US {
+    internal class PrivacyModel_en_GB {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Index_en_US() {
+        internal PrivacyModel_en_GB() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Pages.Index.en-US", typeof(Index_en_US).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Pages.PrivacyModel.en-GB", typeof(PrivacyModel_en_GB).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -47,9 +47,9 @@ namespace i18n.Resources.Pages {
             }
         }
         
-        internal static string _WELCOME_ {
+        internal static string _TEXT_ {
             get {
-                return ResourceManager.GetString("_WELCOME_", resourceCulture);
+                return ResourceManager.GetString("_TEXT_", resourceCulture);
             }
         }
     }
