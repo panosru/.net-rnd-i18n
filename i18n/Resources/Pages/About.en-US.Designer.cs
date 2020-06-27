@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace i18n.Resources.Localization {
+namespace i18n.Resources.Pages {
     using System;
     using System.Reflection;
     
@@ -16,21 +16,21 @@ namespace i18n.Resources.Localization {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class SharedResource_en_US {
+    internal class About_en_US {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal SharedResource_en_US() {
+        internal About_en_US() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Localization.SharedResource.en-US", typeof(SharedResource_en_US).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Pages.About.en-US", typeof(About_en_US).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -47,21 +47,15 @@ namespace i18n.Resources.Localization {
             }
         }
         
-        internal static string _COLOR_ {
+        internal static string _WORDS_TITLE_ {
             get {
-                return ResourceManager.GetString("_COLOR_", resourceCulture);
+                return ResourceManager.GetString("_WORDS_TITLE_", resourceCulture);
             }
         }
         
-        internal static string _WORDS_ {
+        internal static string _RIGHT_WRONT_TITLE_ {
             get {
-                return ResourceManager.GetString("_WORDS_", resourceCulture);
-            }
-        }
-        
-        internal static string _RIGHT_WRONG_ {
-            get {
-                return ResourceManager.GetString("_RIGHT_WRONG_", resourceCulture);
+                return ResourceManager.GetString("_RIGHT_WRONT_TITLE_", resourceCulture);
             }
         }
     }

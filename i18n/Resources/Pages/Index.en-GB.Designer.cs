@@ -16,21 +16,21 @@ namespace i18n.Resources.Pages {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class IndexModel_en_GB {
+    internal class Index_en_GB {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal IndexModel_en_GB() {
+        internal Index_en_GB() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Pages.IndexModel.en-GB", typeof(IndexModel_en_GB).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Pages.Index.en-GB", typeof(Index_en_GB).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

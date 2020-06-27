@@ -42,9 +42,12 @@
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.csprojAssemblyReference.cache
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Localization.SharedResource.en-GB.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Localization.SharedResource.en-US.resources
-/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.IndexModel.en-GB.resources
-/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.IndexModel.en-US.resources
-/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.PrivacyModel.en-GB.resources
-/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.PrivacyModel.en-US.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/en-GB/i18n.resources.cs
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/en-US/i18n.resources.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Pages/About.cshtml.g.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.About.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.About.en-US.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Index.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Index.en-US.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Privacy.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Privacy.en-US.resources

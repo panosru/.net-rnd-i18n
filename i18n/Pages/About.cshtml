@@ -1,0 +1,16 @@
+﻿@page "/about"
+@model AboutModel
+@inject IViewLocalizer Localizer
+@inject IStringLocalizer<Localization.SharedResource> SharedResource
+@inject IHtmlLocalizer<Localization.SharedResource> HtmlSharedResource
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h3>@Localizer["_WORDS_TITLE_"]</h3>
+<p>@SharedResource["_WORDS_"]</p>
+<br />
+<h3>Bold is correct!</h3>
+<p>@HtmlSharedResource["_RIGHT_WRONG_"]</p>

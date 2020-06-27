@@ -11,16 +11,29 @@ namespace i18n.Pages
     {
         public IActionResult OnPost()
         {
-            var NewCulture = Request.Form["NewCulture"];
-            var ReturnUrl = Request.Form["ReturnUrl"];
+            IRequestCultureFeature cultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+            string currentCulture = cultureFeature?.RequestCulture.Culture.Name;
+
+            string newCulture = Request.Form["NewCulture"];
+            string returnUrl = Request.Form["ReturnUrl"];
+
+            if (cultureFeature != null)
+            {
+                // ignore case
+                returnUrl = returnUrl.Replace(currentCulture, newCulture, StringComparison.OrdinalIgnoreCase);
+            }
+            else
+            {
+                returnUrl = $"{newCulture}{returnUrl}";
+            }
 
             Response.Cookies.Append(
                 CookieRequestCultureProvider.DefaultCookieName,
-                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(NewCulture)),
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(newCulture)),
                 new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
             );
 
-            return LocalRedirect(HttpUtility.UrlDecode(ReturnUrl));
+            return LocalRedirect(HttpUtility.UrlDecode(returnUrl));
         }
     }
 }

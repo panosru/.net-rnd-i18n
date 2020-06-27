@@ -1,16 +1,17 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{C3E4E5A3-AD7E-4C7A-8A38-DA3CBD33E972}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="i18n/Startup.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{C3E4E5A3-AD7E-4C7A-8A38-DA3CBD33E972}|i18n">
+  <MonoDevelop.Ide.Workbench ActiveDocument="i18n/Middlewares/RedirectUnsupportedCultures.cs">
     <Files>
-      <File FileName="i18n/Pages/Index.cshtml.cs" Line="20" Column="52" />
-      <File FileName="i18n/Pages/Index.cshtml" />
-      <File FileName="i18n/Resources/Pages/IndexModel.en-GB.resx" />
-      <File FileName="i18n/Resources/Pages/IndexModel.en-US.resx" />
-      <File FileName="i18n/Pages/_ViewImports.cshtml" />
-      <File FileName="i18n/Pages/Privacy.cshtml" />
-      <File FileName="i18n/Startup.cs" Line="32" Column="1" />
-      <File FileName="i18n/Program.cs" />
-      <File FileName="i18n/Localization/SharedResource.cs" />
-      <File FileName="i18n/Localization/CustomCultureRouteRouteModelConvention.cs" />
+      <File FileName="i18n/Pages/About.cshtml" Line="14" Column="7" />
+      <File FileName="i18n/Pages/About.cshtml.cs" Line="1" Column="1" />
+      <File FileName="i18n/Pages/Shared/_Layout.cshtml" Line="47" Column="1" />
+      <File FileName="i18n/TagHelpers/CultureAnchorTagHelper.cs" Line="58" Column="2" />
+      <File FileName="i18n/Localization/CustomCultureRouteModelConvention.cs" Line="24" Column="6" />
+      <File FileName="i18n/Middlewares/RedirectUnsupportedCultures.cs" Line="1" Column="1" />
+      <File FileName="i18n/Pages/Privacy.cshtml" Line="3" Column="33" NotebookId="1" />
+      <File FileName="i18n/Pages/Privacy.cshtml.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="i18n/Pages/Index.cshtml" Line="1" Column="10" NotebookId="1" />
+      <File FileName="i18n/Startup.cs" Line="71" Column="1" NotebookId="1" />
+      <File FileName="i18n/Pages/Index.cshtml.cs" Line="15" Column="26" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,25 +19,27 @@
           <Node name="RND" expanded="True">
             <Node name="i18n" expanded="True">
               <Node name="Localization" expanded="True" />
-              <Node name="Middlewares" expanded="True" />
+              <Node name="Middlewares" expanded="True">
+                <Node name="RedirectUnsupportedCultures.cs" selected="True" />
+              </Node>
               <Node name="Pages" expanded="True">
                 <Node name="Shared" expanded="True" />
+                <Node name="About.cshtml" expanded="True" />
                 <Node name="ChangeCulture.cshtml" expanded="True" />
                 <Node name="Error.cshtml" expanded="True" />
                 <Node name="Index.cshtml" expanded="True" />
                 <Node name="Privacy.cshtml" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="Localization" expanded="True" />
                 <Node name="Pages" expanded="True" />
               </Node>
               <Node name="TagHelpers" expanded="True" />
               <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
                 <Node name="js" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

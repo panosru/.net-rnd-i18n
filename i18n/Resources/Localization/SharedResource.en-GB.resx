@@ -16,4 +16,12 @@
     <data name="_COLOR_" xml:space="preserve">
         <value>colour</value>
     </data>
+    
+    <data name="_WORDS_" xml:space="preserve">
+        <value>wardrobe, petrol, lift, chemist</value>
+    </data>
+    
+    <data name="_RIGHT_WRONG_" xml:space="preserve">
+        <value><![CDATA[It is <strong>vaccum cleaners</strong> not <em>hoovers</em>!]]></value>
+    </data>
 </root>

@@ -16,21 +16,21 @@ namespace i18n.Resources.Pages {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class IndexModel_en_US {
+    internal class About_en_GB {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal IndexModel_en_US() {
+        internal About_en_GB() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Pages.IndexModel.en-US", typeof(IndexModel_en_US).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("i18n.Resources.Pages.About.en-GB", typeof(About_en_GB).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -47,15 +47,15 @@ namespace i18n.Resources.Pages {
             }
         }
         
-        internal static string _WELCOME_ {
+        internal static string _WORDS_TITLE_ {
             get {
-                return ResourceManager.GetString("_WELCOME_", resourceCulture);
+                return ResourceManager.GetString("_WORDS_TITLE_", resourceCulture);
             }
         }
         
-        internal static string _FOOBAR_ {
+        internal static string _RIGHT_WRONT_TITLE_ {
             get {
-                return ResourceManager.GetString("_FOOBAR_", resourceCulture);
+                return ResourceManager.GetString("_RIGHT_WRONT_TITLE_", resourceCulture);
             }
         }
     }

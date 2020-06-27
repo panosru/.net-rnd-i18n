@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>79a3edd0-2092-40a2-a04d-dcb46d5ca9ed</UserSecretsId>
   </PropertyGroup>
 
 
@@ -16,14 +17,6 @@
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Pages\Privacy.en-GB.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Privacy.en-GB.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Pages\Privacy.en-US.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Privacy.en-US.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resources\Localization\SharedResource.en-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SharedResource.en-GB.Designer.cs</LastGenOutput>
@@ -40,9 +33,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>IndexModel.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Resources\Localization\SharedResource.en-US.Designer.cs" />
+    <EmbeddedResource Update="Resources\Pages\About.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>About.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\About.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>About.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Pages\IndexModel.en-GB.Designer.cs">
@@ -56,6 +54,18 @@
     </Compile>
     <Compile Update="Resources\Pages\PrivacyModel.en-US.Designer.cs">
       <DependentUpon>PrivacyModel.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\About.en-GB.Designer.cs">
+      <DependentUpon>About.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Pages\About.en-US.Designer.cs">
+      <DependentUpon>About.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Localization\SharedResource.en-GB.Designer.cs">
+      <DependentUpon>SharedResource.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Localization\SharedResource.en-US.Designer.cs">
+      <DependentUpon>SharedResource.en-US.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

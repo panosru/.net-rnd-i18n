@@ -2,62 +2,65 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Options;
+using Microsoft.Net.Http.Headers;
 
 namespace i18n.Middlewares
 {
-    public class RedirectUnsupportedCultures
+    public class RedirectUnsupportedCultures : IRule
     {
-        private readonly RequestDelegate _next;
-        private readonly string _routeDataStringKey;
-        private readonly IList<CultureInfo> _cultureItems;
+        //private readonly string _extension;
+        //private readonly PathString _newPath;
+        private IList<CultureInfo> _cultureItems;
+        private string _cultureRouteKey;
 
-        public RedirectUnsupportedCultures(
-        RequestDelegate next, IOptions<RequestLocalizationOptions> options)
+        public RedirectUnsupportedCultures(IOptions<RequestLocalizationOptions> options)
         {
-            _next = next;
-            var provider = options.Value.RequestCultureProviders
-            .Select(x => x as RouteDataRequestCultureProvider)
-            .FirstOrDefault(x => x != null);
+            RouteDataRequestCultureProvider provider = options.Value.RequestCultureProviders
+                .OfType<RouteDataRequestCultureProvider>()
+                .First();
 
             _cultureItems = options.Value.SupportedUICultures;
 
-            _routeDataStringKey = provider.RouteDataStringKey;
+            _cultureRouteKey = provider.RouteDataStringKey;
         }
 
-        public async Task Invoke(HttpContext context)
+        public void ApplyRule(RewriteContext rewriteContext)
         {
-            var requestedCulture = context.GetRouteValue(_routeDataStringKey)?.ToString();
-            var cultureFeature = context.Features.Get<IRequestCultureFeature>();
-
-            var actualCulture = cultureFeature?.RequestCulture.Culture.Name;
-
-            if(string.IsNullOrEmpty(requestedCulture) || _cultureItems.All(x => x.Name != requestedCulture)
-            && !string.Equals(requestedCulture, actualCulture, StringComparison.OrdinalIgnoreCase))
-        {
-                var newCulturedPath = GetNewPath(context, actualCulture);
-                context.Response.Redirect(newCulturedPath);
+            // TODO find why non-existing resources that would give 404 (such as missing ico) send into infinite loop
+            if (rewriteContext.HttpContext.Request.Path.Value.EndsWith(".ico") ||
+                rewriteContext.HttpContext.Request.Path.Value.Contains("change-culture"))
+            {
                 return;
             }
 
-            await _next.Invoke(context);
-        }
+            IRequestCultureFeature cultureFeature = rewriteContext.HttpContext.Features.Get<IRequestCultureFeature>();
 
-        private string GetNewPath(HttpContext context, string newCulture)
-        {
-            var routeData = context.GetRouteData();
-            var router = routeData.Routers[0]; // Does not exist :(
-            var virtualPathContext = new VirtualPathContext(context, routeData.Values, new RouteValueDictionary {
-                { _routeDataStringKey, newCulture }
-            });
+            string actualCulture = cultureFeature?.RequestCulture.Culture.Name;
 
-            return router.GetVirtualPath(virtualPathContext).VirtualPath;
+            string requestedCulture = rewriteContext.HttpContext.GetRouteValue(_cultureRouteKey)?.ToString();
+
+            // TODO ensure to give precedence to cookie containing localization. Either redirect here, or changeculture model needs to be aware of more corner cases.
+            if (string.IsNullOrEmpty(requestedCulture) || _cultureItems.All(x => x.Name != requestedCulture)
+                && !string.Equals(requestedCulture, actualCulture, StringComparison.OrdinalIgnoreCase))
+            {
+                string localizedPath = $"/{actualCulture}{rewriteContext.HttpContext.Request.Path.Value}".ToLower();
+
+                HttpResponse response = rewriteContext.HttpContext.Response;
+                response.StatusCode = StatusCodes.Status301MovedPermanently;
+                rewriteContext.Result = RuleResult.EndResponse;
+
+                // preserve query part parameters of the URL (?parameters) if there were any
+                response.Headers[HeaderNames.Location] =
+                    localizedPath + rewriteContext.HttpContext.Request.QueryString;
+            }
         }
     }
 }

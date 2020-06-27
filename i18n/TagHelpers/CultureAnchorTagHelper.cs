@@ -1,10 +1,11 @@
 ﻿using System;
+using i18n;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace i18n.TagHelpers
+namespace Blog.TagHelpers
 {
     [HtmlTargetElement("a", Attributes = ActionAttributeName)]
     [HtmlTargetElement("a", Attributes = ControllerAttributeName)]
@@ -39,16 +40,12 @@ namespace i18n.TagHelpers
         private const string Href = "href";
 
         private readonly IHttpContextAccessor contextAccessor;
-        private readonly string defaultRequestCulture = "en-GB";
+        private readonly string defaultRequestCulture = Startup.DefaultRequestCulture.Culture.ToString().ToLower();
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            var culture = (string)contextAccessor.HttpContext.Request.RouteValues["culture"];
 
-            if (culture != null && culture != defaultRequestCulture)
-            {
-                RouteValues["culture"] = culture;
-            }
+            RouteValues["culture"] = (string)contextAccessor.HttpContext.Request.RouteValues["culture"] ?? defaultRequestCulture;
 
             base.Process(context, output);
         }

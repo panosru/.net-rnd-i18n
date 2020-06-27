@@ -13,15 +13,11 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     
-    <data name="_COLOR_" xml:space="preserve">
-        <value>color</value>
+    <data name="_WORDS_TITLE_" xml:space="preserve">
+        <value>British English Words:</value>
     </data>
     
-    <data name="_WORDS_" xml:space="preserve">
-        <value>closet, gas, elevator, drugstore</value>
-    </data>
-    
-    <data name="_RIGHT_WRONG_" xml:space="preserve">
-        <value><![CDATA[It is a <strong>photocopier</strong> not a <em>xerox machine</em>!]]></value>
+    <data name="_RIGHT_WRONT_TITLE_" xml:space="preserve">
+        <value><![CDATA[<h3>Bold is correct!</h3>]]></value>
     </data>
 </root>
