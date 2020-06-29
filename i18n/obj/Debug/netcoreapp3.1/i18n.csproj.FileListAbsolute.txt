@@ -51,3 +51,11 @@
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Index.en-US.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Privacy.en-GB.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Pages.Privacy.en-US.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Areas/Channel/Pages/Index.cshtml.g.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Areas/Channel/Pages/_ViewStart.cshtml.g.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Index.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Index.en-US.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Areas/Channel/Pages/_ViewImports.cshtml.g.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Areas/Channel/Pages/Shared/Components/Weather/Default.cshtml.g.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Shared.Components.Weather.Default.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Shared.Components.Weather.Default.en-US.resources

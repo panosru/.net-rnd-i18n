@@ -1,0 +1,10 @@
+﻿@page "/channel"
+@model i18n.Areas.Channel.Pages.IndexModel
+@inject IViewLocalizer Localizer
+@{
+}
+
+<h1>Welcome to channel area</h1>
+@Localizer["_WELCOME_"]
+<br />
+@await Component.InvokeAsync("Weather")

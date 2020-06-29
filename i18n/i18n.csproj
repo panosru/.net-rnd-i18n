@@ -15,6 +15,17 @@
     <Folder Include="Middlewares\" />
     <Folder Include="Resources\Localization\" />
     <Folder Include="Services\" />
+    <Folder Include="Areas\Channel\Pages\" />
+    <Folder Include="Resources\Areas\" />
+    <Folder Include="Resources\Areas\Channel\" />
+    <Folder Include="Resources\Areas\Channel\Pages\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Areas\Channel\Pages\Shared\" />
+    <Folder Include="Areas\Channel\Pages\Shared\Components\" />
+    <Folder Include="Areas\Channel\Pages\Shared\Components\Weather\" />
+    <Folder Include="Resources\Areas\Channel\Pages\Shared\" />
+    <Folder Include="Resources\Areas\Channel\Pages\Shared\Components\" />
+    <Folder Include="Resources\Areas\Channel\Pages\Shared\Components\Weather\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resources\Localization\SharedResource.en-GB.resx">
@@ -41,6 +52,22 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>About.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\Channel\Pages\Index.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Index.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\Channel\Pages\Index.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Index.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\Channel\Pages\Shared\Components\Weather\Default.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Default.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\Channel\Pages\Shared\Components\Weather\Default.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Default.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Pages\IndexModel.en-GB.Designer.cs">
@@ -66,6 +93,18 @@
     </Compile>
     <Compile Update="Resources\Localization\SharedResource.en-US.Designer.cs">
       <DependentUpon>SharedResource.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\Channel\Pages\Index.en-GB.Designer.cs">
+      <DependentUpon>Index.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\Channel\Pages\Index.en-US.Designer.cs">
+      <DependentUpon>Index.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\Channel\Pages\Shared\Components\Weather\Default.en-GB.Designer.cs">
+      <DependentUpon>Default.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\Channel\Pages\Shared\Components\Weather\Default.en-US.Designer.cs">
+      <DependentUpon>Default.en-US.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
