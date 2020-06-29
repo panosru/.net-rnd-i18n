@@ -68,6 +68,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Default.en-US.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\Channel\Pages\Foo.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Foo.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\Channel\Pages\Foo.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Foo.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Pages\IndexModel.en-GB.Designer.cs">
@@ -105,6 +113,12 @@
     </Compile>
     <Compile Update="Resources\Areas\Channel\Pages\Shared\Components\Weather\Default.en-US.Designer.cs">
       <DependentUpon>Default.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\Channel\Pages\Foo.en-GB.Designer.cs">
+      <DependentUpon>Foo.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\Channel\Pages\Foo.en-US.Designer.cs">
+      <DependentUpon>Foo.en-US.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

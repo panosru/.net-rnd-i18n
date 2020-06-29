@@ -59,3 +59,6 @@
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Areas/Channel/Pages/Shared/Components/Weather/Default.cshtml.g.cs
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Shared.Components.Weather.Default.en-GB.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Shared.Components.Weather.Default.en-US.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Areas/Channel/Pages/Foo.cshtml.g.cs
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Foo.en-GB.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Foo.en-US.resources
