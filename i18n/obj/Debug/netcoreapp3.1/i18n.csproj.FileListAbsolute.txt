@@ -22,7 +22,6 @@
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.TagHelpers.input.cache
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.TagHelpers.output.cache
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.RazorCoreGenerate.cache
-/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Pages/ChangeCulture.cshtml.g.cs
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Pages/Error.cshtml.g.cs
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Pages/Index.cshtml.g.cs
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Pages/Privacy.cshtml.g.cs
@@ -62,3 +61,4 @@
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Areas/Channel/Pages/Foo.cshtml.g.cs
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Foo.en-GB.resources
 /Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/i18n.Resources.Areas.Channel.Pages.Foo.en-US.resources
+/Volumes/Projects/RND/VisualStudio/RND/i18n/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/Components/CultureSelector/Default.cshtml.g.cs

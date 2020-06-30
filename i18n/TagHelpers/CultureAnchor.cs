@@ -18,9 +18,9 @@ namespace Blog.TagHelpers
     [HtmlTargetElement("a", Attributes = RouteAttributeName)]
     [HtmlTargetElement("a", Attributes = RouteValuesDictionaryName)]
     [HtmlTargetElement("a", Attributes = RouteValuesPrefix + "*")]
-    public class CultureAnchorTagHelper : AnchorTagHelper
+    public class CultureAnchor : AnchorTagHelper
     {
-        public CultureAnchorTagHelper(IHttpContextAccessor contextAccessor, IHtmlGenerator generator) :
+        public CultureAnchor(IHttpContextAccessor contextAccessor, IHtmlGenerator generator) :
             base(generator)
         {
             this.contextAccessor = contextAccessor;

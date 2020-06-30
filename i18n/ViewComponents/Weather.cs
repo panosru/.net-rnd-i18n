@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace i18n.ViewComponents
 {
-    public class WeatherViewComponent : ViewComponent
+    public class Weather : ViewComponent
     {
         private double Temperature;
 
-        public WeatherViewComponent()
+        public Weather()
         {
             Random rand = new Random();
             Temperature = rand.Next(-14, 42);

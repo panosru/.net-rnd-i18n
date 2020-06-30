@@ -1,0 +1,10 @@
+﻿@model Dictionary<string, string>
+@if ("en-GB" == Model["CurrentCulture"])
+{
+    <a class="nav-link" href="@Model["ReturnUrl"]">en-US</a>
+}
+
+@if ("en-US" == Model["CurrentCulture"])
+{
+    <a class="nav-link" href="@Model["ReturnUrl"]">en-GB</a>
+}

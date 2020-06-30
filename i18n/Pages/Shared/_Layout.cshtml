@@ -29,7 +29,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li>
                             <a class="nav-link text-dark" asp-page="/About">About</a>
@@ -43,24 +43,7 @@
                     </ul>
                 </div>
                 <nav class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <form id="changeCulture"
-                          asp-page="ChangeCulture"
-                          method="post"
-                          role="form">
-
-                        @if ("en-GB" != CultureInfo.CurrentCulture.Name)
-                        {
-                            <a class="nav-link submit">en-GB</a>
-                            <input type="hidden" name="NewCulture" value="en-gb" />
-                        }
-
-                        @if ("en-US" != CultureInfo.CurrentCulture.Name)
-                        {
-                            <a class="nav-link submit">en-US</a>
-                            <input type="hidden" name="NewCulture" value="en-us" />
-                        }
-                        <input type="hidden" name="ReturnUrl" value="@returnUrl" />
-                    </form>
+                    @await Component.InvokeAsync("CultureSelector")
                 </nav>
             </div>
         </nav>

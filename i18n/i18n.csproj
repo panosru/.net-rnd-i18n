@@ -26,6 +26,8 @@
     <Folder Include="Resources\Areas\Channel\Pages\Shared\" />
     <Folder Include="Resources\Areas\Channel\Pages\Shared\Components\" />
     <Folder Include="Resources\Areas\Channel\Pages\Shared\Components\Weather\" />
+    <Folder Include="Pages\Shared\Components\" />
+    <Folder Include="Pages\Shared\Components\CultureSelector\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resources\Localization\SharedResource.en-GB.resx">

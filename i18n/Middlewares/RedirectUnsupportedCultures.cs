@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
@@ -16,8 +15,6 @@ namespace i18n.Middlewares
 {
     public class RedirectUnsupportedCultures : IRule
     {
-        //private readonly string _extension;
-        //private readonly PathString _newPath;
         private IList<CultureInfo> _cultureItems;
         private string _cultureRouteKey;
 
@@ -35,8 +32,7 @@ namespace i18n.Middlewares
         public void ApplyRule(RewriteContext rewriteContext)
         {
             // TODO find why non-existing resources that would give 404 (such as missing ico) send into infinite loop
-            if (rewriteContext.HttpContext.Request.Path.Value.EndsWith(".ico") ||
-                rewriteContext.HttpContext.Request.Path.Value.Contains("change-culture"))
+            if (rewriteContext.HttpContext.Request.Path.Value.EndsWith(".ico"))
             {
                 return;
             }
@@ -46,6 +42,20 @@ namespace i18n.Middlewares
             string actualCulture = cultureFeature?.RequestCulture.Culture.Name;
 
             string requestedCulture = rewriteContext.HttpContext.GetRouteValue(_cultureRouteKey)?.ToString();
+
+            Console.WriteLine(rewriteContext.HttpContext.Request.Cookies[CookieRequestCultureProvider.DefaultCookieName]);
+            Console.WriteLine(actualCulture);
+            Console.WriteLine(requestedCulture);
+
+            if ($"c={actualCulture}|uic={actualCulture}" !=
+                rewriteContext.HttpContext.Request.Cookies[CookieRequestCultureProvider.DefaultCookieName])
+            {
+                rewriteContext.HttpContext.Response.Cookies.Append(
+                    CookieRequestCultureProvider.DefaultCookieName,
+                    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(actualCulture)),
+                    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+                );
+            }
 
             // TODO ensure to give precedence to cookie containing localization. Either redirect here, or changeculture model needs to be aware of more corner cases.
             if (string.IsNullOrEmpty(requestedCulture) || _cultureItems.All(x => x.Name != requestedCulture)
